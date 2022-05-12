@@ -11,15 +11,23 @@ x=int(input("Ingrese el valor de x: "))
 y=int(input("Ingrese el valor de y: "))
 
 #processing 
-if x>=0 and y>=0:
+if x>0 and y>0:
     print("Las coordenadas: " + "(" +str(x)+"," + str(y) + ")" + " se encuentran en el CUADRANTE 1. ")
 else:
-    if x<=0 and y>=0:
+    if x<0 and y>0:
         print("Las coordenadas: " + "(" +str(x)+"," + str(y) + ")" +" se encuentran en el CUADRANTE 2. ")
     else:
-        if x<=0 and y<=0:
+        if x<0 and y<0:
             print("Las coordenadas: " + "(" +str(x)+"," + str(y) + ")" +" se encuentran en el CUADRANTE 3. ")
         else:
-            if x>=0 and y<=0:
+            if x>0 and y<0:
                 print("Las coordenadas: " + "(" +str(x)+"," + str(y) + ")" +" se encuentran en el CUADRANTE 4. ")
+            else:
+                if x==0:
+                    if y==0:
+                        print("ORIGEN")
+                    else:
+                        print("EJE Y")
+                else:
+                    print("EJE X")
     
